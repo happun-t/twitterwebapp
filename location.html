@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>geolocation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <hr style="margin: 3em 0 ;" />
+    <h2>取得データ</h2>
+    緯度：<div id="gpslat"></div><br />
+    経度：<div id="gpslng"></div><br />
+    高度：<div id="gpsalt"></div><br />
+    位置精度：<div id="acclatlng"></div><br />
+    高度精度：<div id="accalt"></div><br />
+
+    <script src="getlocation.js"></script>
+
+    <form name="input_form" action="twitteroauth/tweetpost.php" method="post">
+        <p>
+            <input type="hidden" name="tweettext" value="" />
+            <input type="submit" value="位置情報をtweet" />
+            
+        </p>
+    </form>
+
+
+</body>
+
+</html>
